@@ -1,0 +1,60 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aerolineas Splinter</title>
+        <link rel="shortcut icon" href="/Img/plane-alt-solid-24.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/destino.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <img src="/Img/plane-alt-solid-24.png" alt="logo" class="logo">
+            <h1>TITULO PRINCIPAL</h1>
+            <nav id="nav">
+                <button id="menu-toggle">☰</button>
+                <ul id="menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="pagina1.html">DESTINOS</a></li>
+                    <li><a href="pagina2.html">CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="card">
+          <div class=""><img src="/Img/perito2.jpg" class="perito2" id="imagen" alt=""></div>
+          <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet</p>
+          <button class="ver-mas">Ver más</button>
+        </section>
+      
+        <section class="card">
+          <div class=""><img src="/Img/cheltonsc.jpg" class="chelton" id="imagen" alt=""></div>
+          <p>Lorem ipsum dolor sit amet et delectus accommodare his consul</p>
+          <button class="ver-mas">Ver más</button>
+        </section>
+      </main>    
+
+      <footer>
+        <p style="color: #fff;">© Copyright 2025. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><img src="/Img/twitter.png"></a>
+            <a href="#"><img src="/Img/instagram-new.png"></a>
+            <a href="#"><img src="/Img/print.png"></a>
+        </div>
+    </footer>
+    
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+    });
+    </script>
+</body>
+</html>

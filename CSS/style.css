@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sansation;
+}
+
+body{
+    background-color: #C14C64;
+}
+
+header {
+    border-bottom: 1px solid black;
+    background: white;
+}
+
+header .container {
+    background: #8CB2C2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.salinas{
+    margin: 0;
+    padding: auto;
+    height: 50vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    position: relative;
+}
+
+p{
+    color: #3B4042;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+}
+
+#menu li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.banner {
+    text-align: center;
+    margin: 2rem;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vh 2vw;
+    gap: 4vw;
+    flex-wrap: wrap;
+}
+
+.text-card {
+    max-width: 40%;
+}
+
+.cerrojujuy {
+    width: 30vw;
+    height: 30vh;
+}
+
+.iguazu{
+    width: 30vw;
+    height: 30vh;
+}
+
+#imagen {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+footer {
+    background: #3B4042;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icons {
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+}
+
+.social-icons img {
+    filter: invert(1);
+}
+
+
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50vw;
+        border: 1px solid #ccc;
+    }
+    .text-card {
+        max-width: 40%;
+    }
+
+    #menu.show {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
