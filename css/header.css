@@ -1,10 +1,25 @@
+:root {
+    --color-principal: #444;
+    --color-principal-hover: #666;
+    --color-borde: #333;
+    --color-borde2: #ccc;
+    --color-fondo: #f9f9f9;
+    --color-texto: #555;
+    --color-blanco: #fff;
+    --color-textop: #3B4042;
+    --color-footer: #3B4042;
+    --color-card: #C14C64;
+    --color-body: #C14C64;
+    --color-header: #8CB2C2;
+  }
+
 header {
     border-bottom: 1px solid black;
-    background: white;
+    background: var(--color-blanco);
 }
 
 header .container {
-    background: #8CB2C2;
+    background: var(--color-header);
     display: flex;
     justify-content: space-around;
     align-items: center;

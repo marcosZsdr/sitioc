@@ -8,7 +8,7 @@ document.getElementById("nav").innerHTML = `  <ul>
 `;
 document.getElementById("footer").innerHTML = '<p>&copy; 2025 Explora Argentina - Todos los derechos reservados</p>';
 
-
+/*menu hamburguesa */
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 

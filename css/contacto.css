@@ -1,3 +1,18 @@
+:root {
+    --color-principal: #444;
+    --color-principal-hover: #666;
+    --color-borde: #333;
+    --color-borde2: #ccc;
+    --color-fondo: #f9f9f9;
+    --color-texto: #555;
+    --color-blanco: #fff;
+    --color-textop: #3B4042;
+    --color-footer: #3B4042;
+    --color-card: #C14C64;
+    --color-body: #C14C64;
+    --backcolor-fcontainer: #51656D;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +25,7 @@ header {
     background: #8CB2C2;
 }
 body{
-    background-color: #C14C64;
+    background-color: var(--color-body);
 }
 header .container {
     display: flex;
@@ -49,7 +64,7 @@ nav {
 }
 
 p{
-    color: #666;
+    color: var(--color-textop);
 }
 
 #menu {
@@ -104,40 +119,16 @@ p{
     border-radius: 0.5rem;
 }
 
-footer {
-    background: #3B4042;
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.social-icons {
-    margin-top: 0.5rem;
-}
-
-.social-icons a {
-    margin: 0 0.5rem;
-}
-
-.social-icons img {
-    filter: invert(1);
-}
-
-/* Responsivo */
 @media (max-width: 768px) {
     #menu {
         display: none;
         flex-direction: column;
-        background: white;
+        background: var(--color-blanco);
         position: absolute;
         top: 100%;
         right: 0;
         width: 50vw;
-        border: 1px solid #ccc;
+        border: 1px solid var(--color-borde2);
     }
 
     #menu.show {
@@ -158,13 +149,13 @@ footer {
 }
 
 .formulario-container {
-    border: 0.1rem solid #333;
+    border: 0.1rem solid var(--color-borde);
     padding: 2rem;
     border-radius: 0.5rem;
     width: 90%;
     max-width: 400px;
     margin-bottom: 2rem;
-    background: #51656D;
+    background: var(--backcolor-fcontainer);
 }
 
 .formulario {
@@ -180,14 +171,14 @@ footer {
 
 .formulario input {
     padding: 0.5rem;
-    border: 0.1rem solid #333;
+    border: 0.1rem solid var(--color-borde);
     border-radius: 0.3rem;
     font-size: 1rem;
 }
 
 .formulario button {
-    background-color: #444;
-    color: white;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
     border: none;
     padding: 0.7rem;
     border-radius: 0.3rem;
@@ -196,13 +187,13 @@ footer {
 }
 
 .formulario button:hover {
-    background-color: #666;
+    background-color: var(--color-principal-hover);
 }
 
 .texto-inferior {
     text-align: center;
     font-size: 0.9rem;
-    color: #555;
+    color: var(--color-texto);
     padding: 1rem;
     max-width: 600px;
 }

@@ -1,3 +1,18 @@
+:root {
+    --color-principal: #444;
+    --color-principal-hover: #666;
+    --color-borde: #333;
+    --color-borde2: #ccc;
+    --color-fondo: #f9f9f9;
+    --color-texto: #555;
+    --color-blanco: #fff;
+    --color-textop: #3B4042;
+    --color-footer: #3B4042;
+    --color-card: #C14C64;
+    --color-body: #C14C64;
+  }
+  
+
 * {
     margin: 0;
     padding: 0;
@@ -6,30 +21,13 @@
 }
 
 body{
-    background-color: #C14C64;
+    background-color: var(--color-body);
 }
 html, body{
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-}
-
-header {
-    border-bottom: 1px solid black;
-    background: white;
-}
-
-header .container {
-    background: #8CB2C2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-}
-
-.logo{
-    cursor: pointer;
 }
 
 main {
@@ -43,7 +41,7 @@ main {
 }
 
 .card {
-    background-color: #C14C64;
+    background-color: var(--color-card);
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -80,8 +78,8 @@ main {
 
 
 .ver-mas {
-    background-color: #444;
-    color: #fff;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
     border: none;
     padding: 0.5rem 1.5rem;
     border-radius: 0.3rem;
@@ -101,7 +99,7 @@ nav {
 }
 
 p{
-    color: #666;
+    color: var(--color-textop);
 }
 
 #menu {
@@ -140,41 +138,18 @@ p{
     gap: 4vw;
     flex-wrap: wrap;
 }
-footer {
-    background: #3B4042;
-    text-align: center;
-    padding: 2rem 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.social-icons {
-    margin-top: 0.5rem;
-}
-
-.social-icons a {
-    margin: 0 0.5rem;
-}
-
-.social-icons img {
-    filter: invert(1);
-}
 
 /* Responsivo */
 @media (max-width: 768px) {
     #menu {
         display: none;
         flex-direction: column;
-        background: white;
+        background: var(--color-blanco);
         position: absolute;
         top: 100%;
         right: 0;
         width: 50vw;
-        border: 1px solid #ccc;
+        border: 1px solid var(--color-borde2);
     }
 
     #menu.show {

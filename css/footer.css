@@ -1,0 +1,35 @@
+:root {
+    --color-principal: #444;
+    --color-principal-hover: #666;
+    --color-borde: #333;
+    --color-borde2: #ccc;
+    --color-fondo: #f9f9f9;
+    --color-texto: #555;
+    --color-blanco: #fff;
+    --color-textop: #3B4042;
+    --color-footer: #3B4042;
+    --color-card: #C14C64;
+    --color-body: #C14C64;
+  }
+footer {
+    background: #3B4042;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icons {
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+}
+
+.social-icons img {
+    filter: invert(1);
+}
