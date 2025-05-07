@@ -1,3 +1,9 @@
 nav {
     position: relative;
 }
+nav ul{
+    display: none;
+}
+nav.open ul{
+    display: block;
+}
