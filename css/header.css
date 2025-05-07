@@ -1,0 +1,16 @@
+header {
+    border-bottom: 1px solid black;
+    background: white;
+}
+
+header .container {
+    background: #8CB2C2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo{
+    cursor: pointer;
+}
